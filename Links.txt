@@ -1,0 +1,23 @@
+Descargar el instalador en todas estas paginas y ejecutarlos dando siguiente en todos:
+GIT
+https://git-scm.com/downloads
+
+Visual Studio Code (editor de código)
+https://code.visualstudio.com/download
+
+Node.js
+https://nodejs.org/en
+
+
+Crearse cuenta en estas paginas: 
+ 
+GitHub
+https://github.com/
+
+MongoDB
+https://www.mongodb.com/es/lp/cloud/atlas/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-ar_ps-all_desktop_es-la_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=20378068757&adgroup=154980290281&cq_cmp=20378068757&gad_source=1&gclid=CjwKCAjwl6-3BhBWEiwApN6_kltk10VI3kfqfeZuutHFfmFdSnSB5Iq7i-E9F3TGYlT3onM4d5sAWhoCsR4QAvD_BwE
+
+LinkedIn
+https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
+
+
