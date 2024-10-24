@@ -6,6 +6,7 @@ const Footer = () => {
       <Row>
         <Col>
           <h3>izquierda</h3>
+          
         </Col>
         <Col>
           <h3> derecha</h3>
