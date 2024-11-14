@@ -11,12 +11,16 @@ const Navb = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto w-100">
             <Row className="w-100">
-              <Col md={9}></Col>
-              <Col md={2} xs={12}>
-                <Button as={Link} to="/login">Iniciar Sesion</Button>
+              <Col lg={9}></Col>
+              <Col lg={2} sm={12} className="mt-2">
+                <Button as={Link} to="/login">
+                  Iniciar Sesion
+                </Button>
               </Col>
-              <Col md={1} xs={12}>
-                <Button as={Link} to="/register">Regitrate</Button>
+              <Col lg={1} sm={12} className="mt-2">
+                <Button as={Link} to="/register">
+                  Registrate
+                </Button>
               </Col>
             </Row>
           </Nav>
