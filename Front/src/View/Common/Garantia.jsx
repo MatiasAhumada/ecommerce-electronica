@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const Register = () => {
+const Garantia = () => {
     return (
         <Container>
-            <h1>Sory el register</h1>
+            <h1>soy la garantia</h1>
         </Container>
     );
 };
 
-export default Register;
+export default Garantia;

@@ -1,11 +1,12 @@
-<RSC></RSC>
 import React from 'react';
+import { Container } from 'react-bootstrap';
+
 
 const Login = () => {
     return (
-        <div>
-            
-        </div>
+        <Container>
+            <h1>soy el iniciar sesion</h1>
+        </Container>
     );
 };
 
