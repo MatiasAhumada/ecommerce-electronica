@@ -4,6 +4,7 @@ import "../src/CSS/App.css";
 import Navb from "./View/Common/Navbar";
 import Home from "./View/Home";
 import Footer from "./View/Common/Footer";
+import QSomos from "./View/Common/Qsomos";
 import Login from "./View/Login";
 import Register from "./View/Register";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/q.somos" element={<QSomos></QSomos>}></Route>
       </Routes>     
       <Footer></Footer>
     </Router>

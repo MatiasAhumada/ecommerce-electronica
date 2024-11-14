@@ -1,15 +1,25 @@
-    import { Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <footer>
       <Row>
         <Col>
-          <h3>izquierda</h3>
-          
+          <div>
+            <h5> Preguntas Frecuentes </h5>
+          </div>
+          <div>
+            <div>
+            </div>
+            <div></div>
+          </div>
         </Col>
         <Col>
-          <h3> derecha</h3>
+          <h5> Redes Sociales </h5>
+        </Col>
+
+        <Col>
+          <h5> Contactanos </h5>
         </Col>
       </Row>
     </footer>
