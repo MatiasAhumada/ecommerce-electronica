@@ -47,7 +47,7 @@ function Login() {
                 required: true,
                 minLength: {
                   value: 5,
-                  message: "El valor minimo del correo es de 5 lugares",
+                  message: "El valor minimo del correo es de 5 caracteres",
                 },
                 maxLength: {
                   value: 30,
@@ -92,6 +92,9 @@ function Login() {
             </Form.Text>
           </Form.Group>
         </Row>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
         <Button type="submit">Submit form</Button>
       </Form>
     </Container>
