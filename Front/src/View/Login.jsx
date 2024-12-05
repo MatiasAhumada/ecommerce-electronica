@@ -38,7 +38,7 @@ function Login() {
             sm="12"
             controlId="validationCustom01"
           >
-            <Form.Label>Email</Form.Label>
+            <Form.Label className="mt-3">Email</Form.Label>
             <Form.Control
               required
               type="email"
@@ -62,13 +62,15 @@ function Login() {
             />
             <Form.Text className="text-dark">{errors.email?.message}</Form.Text>
           </Form.Group>
+          
           <Form.Group as={Col} lg="12" md="12" sm="12">
             <Form.Label>Contraseña</Form.Label>
             <Form.Control
-              required:true
-              type="text"
+              required
+              type="password"
               placeholder="Ingrese contraseña"
               {...register("password", {
+                required:true,
                 minLength: {
                   value: 8,
                   message:
