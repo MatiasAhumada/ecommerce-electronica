@@ -136,29 +136,27 @@ function Register() {
           <Form.Group as={Col} lg="12" md="12" sm="12">
             <Form.Label>Contraseña</Form.Label>
             <Form.Control
-              required
-              type="text"
-              placeholder="Ingrese contraseña"
-              {...register("password", {
-                required:true,
-                minLength: {
-                  value: 8,
-                  message:
-                    "El valor minimo de la contraseña es de 8 caracteres",
-                },
-                maxLength: {
-                  value: 30,
-                  message: "El valor maximo es de 30 caracteres",
-                 
-                },
-                pattern: {
-                    value:
-                      /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/,
-                    message:
-                      "La contraseña debe tener 1 minuscula, 1 mayuscula, 1 número, 1 caracter especial y mínimo 8 digitos",
-                  },
-              })}
-            />
+                  required
+                  type="password"
+                  placeholder="Ingrese contraseña"
+                  {...register("password", {
+                    required: true,
+                    minLength: {
+                      value: 8,
+                      message: "EL valor minimo del correo es de 8 lugares",
+                    },
+                    maxLength: {
+                      value: 30,
+                      message: "El valor maximo es de 30 caracteres",
+                    },
+                    pattern: {
+                      value:
+                        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                      message:
+                        "La contraseña debe tener 1 minuscula, 1 mayuscula, 1 número, 1 caracter especial y longitud minima de 8 digitos",
+                    },
+                  })}
+                />
             <Form.Text className="text-dark">
               {errors.password?.message}
             </Form.Text>
@@ -166,29 +164,27 @@ function Register() {
       <Form.Group className="mb-3" controlId="formGroupConfirmPassword">
         <Form.Label>Confirmar Contraseña</Form.Label>
         <Form.Control
-        required
-          type="text"
-          placeholder="Confirma tu contraseña"
-          {...register("confirmPassword",{
-            required:true,
-            minLength: {
-              value: 8,
-              message:
-                "El valor minimo de la contraseña es de 8 caracteres",
-            },
-            maxLength: {
-              value: 30,
-              message: "El valor maximo es de 30 caracteres",
-             
-            },
-            pattern: {
-                value:
-                  /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8,}$/,
-                message:
-                  "La contraseña debe ser igual que la de arriba",
-              },
-          })}
-        />
+                  required
+                  type="password"
+                  placeholder="Confirme contraseña"
+                  {...register("confirmPassword", {
+                    required: true,
+                    minLength: {
+                      value: 8,
+                      message: "EL valor minimo de la contraseña es de 8 lugares",
+                    },
+                    maxLength: {
+                      value: 30,
+                      message: "El valor maximo es de 30 caracteres",
+                    },
+                    pattern: {
+                      value:
+                        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                      message:
+                        "La contraseña debe tener 1 minuscula, 1 mayuscula, 1 número, 1 caracter especial y longitud minima de 8 digitos",
+                    },
+                  })}
+                />
         <Form.Text className="text-dark">
           {errors.confirmPassword?.message}
         </Form.Text>
