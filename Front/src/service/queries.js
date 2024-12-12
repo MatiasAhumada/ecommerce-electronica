@@ -1,11 +1,11 @@
-import axios from "axios"
-const URL = "https://rickandmortyapi.com/api/character"
- 
+import axios from "axios";
+const URL = "https://rickandmortyapi.com/api/character";
+
 export const consulta = async () => {
- try {
-    const respuesta= await axios.get(URL)
+  try {
+    const respuesta = await axios.get(URL);
     return respuesta.data.results;
- } catch (error) {
+  } catch (error) {
     console.log(error);
- }
+  }
 };
