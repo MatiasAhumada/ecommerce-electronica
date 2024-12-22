@@ -1,13 +1,13 @@
 import React from "react";
-import { Button, Container, Form, InputGroup } from "react-bootstrap";
+import { Button, Col, Container, Form, InputGroup, Row } from "react-bootstrap";
 
 const CargarEquipo = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    console.log("Formulario enviado");
   };
   return (
-    <Container>
+    <Container className="d-flex justify-content-center mt-5 mb-5">
       <Form className="text-center w-50" onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="id">
           <Form.Label>ID Recepcion</Form.Label>
