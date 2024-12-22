@@ -6,14 +6,13 @@ const Footer = () => {
   return (
     <footer>
       <Row>
-        <Col lg={4} sm={12}>
+        <Col lg={4} md={6} sm={12} className="mt-3">
           <div>
             <h5>Preguntas Frecuentes</h5>
           </div>
           <div>
             <div className="mt-2">
-              <Link as={Link} to="/qsomos">
-               
+              <Link as={Link} to="/qsomos">               
                 ¿Quienes Somos?
               </Link>
             </div>
@@ -29,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        <Col lg={4} sm={12}>
+        <Col lg={4} sm={12} md={6}  className="mt-3">
           <div>
             <h5>Redes Sociales</h5>
           </div>
@@ -45,9 +44,9 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        <Col lg={4} sm={12}>
+        <Col lg={4} sm={12} md={6}  className="mt-3">
           <div>
-            <h5>Contactano</h5>
+            <h5>Contactanos</h5>
           </div>
           <div>
             <div className="mt-2">
