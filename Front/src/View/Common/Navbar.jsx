@@ -13,7 +13,7 @@ const Navb = () => {
             <Row className="w-100">
               <Col lg={9} sm={12} md={12} className="d-lg-flex">
                 <DropdownButton title="Funciónes" className="mt-3">
-                  <Dropdown.Item href="#action/3.2">Recepcionar Equipo</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/cargaequipo">Recepcionar Equipo</Dropdown.Item>
                   <Dropdown.Item href="#action/3.1">Entregar Equipo</Dropdown.Item>
                   <Dropdown.Item href="#action/3.3">Cobrar</Dropdown.Item>
                   <Dropdown.Item href="#action/3.4">Equipos</Dropdown.Item>
