@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const Pagos = () => {
+const EditFT = () => {
     return (
         <Container>
             <h1>soy los medios de pagos</h1>
@@ -9,4 +9,4 @@ const Pagos = () => {
     );
 };
 
-export default Pagos;
+export default EditFT;
