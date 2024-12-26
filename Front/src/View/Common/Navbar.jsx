@@ -15,7 +15,7 @@ const Navb = () => {
                 <DropdownButton title="Funciónes" className="mt-3">
                   <Dropdown.Item as={Link} to="/cargaequipo">Recepcionar Equipo</Dropdown.Item>
                   <Dropdown.Item href="#action/3.1">Entregar Equipo</Dropdown.Item>
-                  <Dropdown.Item href="#action/3.3">Cobrar</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/cobro">Cobrar</Dropdown.Item>
                   <Dropdown.Item href="#action/3.4">Equipos</Dropdown.Item>
                 </DropdownButton>
               </Col>
