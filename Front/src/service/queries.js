@@ -9,3 +9,14 @@ export const consulta = async () => {
     console.log(error);
   }
 };
+
+export const crearEquipo= async(equipo)=>{
+  try {
+    const respuesta = await axios.post(URL, equipo);
+    return respuesta.data;
+  }
+  catch (error){
+    console.log(error);
+  }
+}
+

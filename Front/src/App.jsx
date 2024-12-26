@@ -9,6 +9,7 @@ import Login from "./View/Login";
 import Register from "./View/Register";
 import Pagos from "./View/Common/Pagos";
 import Garantia from "./View/Common/Garantia";
+import CargarEquipo from "./View/CargarEquipo";
 
 function App() {
   //const [count, setCount] = useState([])
@@ -23,6 +24,7 @@ function App() {
         <Route path="/qsomos" element={<QSomos></QSomos>}></Route>
         <Route path="/pagos" element={<Pagos></Pagos>}></Route>
         <Route path="/garantia" element={<Garantia></Garantia>}></Route>
+        <Route path="/cargaequipo" element={<CargarEquipo></CargarEquipo>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
