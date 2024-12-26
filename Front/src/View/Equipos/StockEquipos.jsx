@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-const Pagos = () => {
+const StockEquipos = () => {
     return (
         <Container>
-            <h1>soy los medios de pagos</h1>
+            <h1>soy los medios de StockEquipos
+            
+            </h1>
         </Container>
     );
 };
 
-export default Pagos;
+export default StockEquipos;
