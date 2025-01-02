@@ -19,8 +19,8 @@ const CargaCobro = () => {
   });
   const onSubmit = (e) => {
     console.log(e);
-    console.log(JSON.stringify(e))
-    localStorage.setItem("cobro",JSON.stringify(e));
+    console.log(JSON.stringify(e));
+    localStorage.setItem("cobro", JSON.stringify(e));
   };
 
   return (
@@ -28,11 +28,11 @@ const CargaCobro = () => {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mt-3 ">
           <Form.Label>Nombre del equipo</Form.Label>
-          <Form.Select {...register("nombreEquipo")}> 
+          <Form.Select {...register("nombreEquipo")}>
             <option>Equipos</option>
-            <option value="uno" >uno</option>
+            <option value="uno">uno</option>
             <option value="dos">dos</option>
-            <option value="tres" >tres</option>
+            <option value="tres">tres</option>
           </Form.Select>
         </Form.Group>
         <Form.Group className="mt-3 " controlId="formGroupEmail">
@@ -57,13 +57,10 @@ const CargaCobro = () => {
           <Form.Label>Monto a cobrar</Form.Label>
           <InputGroup className="mb-3">
             <InputGroup.Text id="basic-addon1">$</InputGroup.Text>
-            <Form.Control type="number"{...register("monto")}/>
+            <Form.Control type="number" {...register("monto")} />
           </InputGroup>
         </Form.Group>
-        <Button type="submit"  >
-   
-          Cobrar
-        </Button>
+        <Button type="submit" as={Link} to="/mostrarCobro">Cobrar</Button>
       </Form>
     </Container>
   );
