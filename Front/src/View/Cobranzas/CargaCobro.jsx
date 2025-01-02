@@ -37,7 +37,7 @@ const CargaCobro = () => {
             <Form.Control type="number" aria-label="presupuesto" />
           </InputGroup>
         </Form.Group>
-        <Button as={Link} to="/muestraCobro">Cobrar</Button>
+        <Button as={Link} to="/mostrarCobro" type="submit">Cobrar</Button>
         </Container>
     );
 };

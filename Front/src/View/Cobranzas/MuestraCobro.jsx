@@ -3,7 +3,6 @@ import { Button, Container, Form, InputGroup } from "react-bootstrap";
 
 const MuestraCobro = () => {
   return (
-    <>
       <Container className="d-flex justify-content-center mt-5 mb-5">
         <Form className="text-center w-50" onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="cliente">
@@ -19,7 +18,6 @@ const MuestraCobro = () => {
             <Form.Control type="number" placeholder="Ej:43026159" />
           </Form.Group>
         </Form>
-      </Container>
       <Container className="d-flex justify-content-center mt-5 mb-5">
         <Form.Group className="mb-3" controlId="Marca">
           <Form.Label>Marca</Form.Label>
@@ -44,8 +42,6 @@ const MuestraCobro = () => {
             <Form.Control type="number" aria-label="presupuesto" />
           </InputGroup>
         </Form.Group>
-      </Container>
-      <Container className="mb-5 mt-3 text-center w-50">
         <Form>
           <Form.Group className="mt-3">
             <Form.Label>Nombre del Equipo</Form.Label>
@@ -78,11 +74,10 @@ const MuestraCobro = () => {
             <Form.Control type="number" aria-label="presupuesto" />
           </InputGroup>
         </Form.Group>
-        <Button as={Link} to="/muestraCobro">
+        <Button as={Link} type="submit">
           Cobrar
         </Button>
       </Container>
-    </>
   );
 };
 
