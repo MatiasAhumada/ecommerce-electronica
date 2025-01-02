@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "../src/CSS/App.css";
 import Navb from "./View/Common/Navbar";
@@ -13,7 +12,7 @@ import CargaCobro from "./View/Cobranzas/CargaCobro";
 import MuestraCobro from "./View/Cobranzas/MuestraCobro";
 
 function App() {
-  //const [count, setCount] = useState([])
+
 
   return (
     <Router>
