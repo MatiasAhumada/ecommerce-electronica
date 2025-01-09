@@ -1,55 +1,49 @@
-import React from 'react';
-import { Container, FormGroup, Row } from 'react-bootstrap';
+import React from "react";
+import { Container, FormControl, FormGroup, FormLabel, FormSelect, Row } from "react-bootstrap";
 
 const StockEquipos = () => {
-    return (
-        <Container>
-            <Row>
-            <Form.Group className="mb-3" controlId="id">
-          <Form.Label>ID</Form.Label>
-          <Form.Control type="text" disabled />
-        </Form.Group>
-            <Form.Group className="mb-3" controlId="text">
-          <Form.Label>Modelo</Form.Label>
-          <Form.Control type="text" disabled />
-        </Form.Group>
-            <Form.Group className="mb-3" controlId="text">
-          <Form.Label>Falla</Form.Label>
-          <Form.Control type="text" disabled />
-        </Form.Group>
-            <Form.Group className="mb-3" controlId="text">
-    <Form.Select aria-label="Estado">
-      <option>Estado</option>
-      <option value="1">Recepcionado</option>
-      <option value="2">En Revision</option>
-      <option value="3">Entregado</option>
-    </Form.Select>
-        </Form.Group>
-            </Row>
-            <Row>
-            <Form.Group className="mb-3" controlId="id">
-          <Form.Label>#A5</Form.Label>
-          <Form.Control type="text" disabled />
-        </Form.Group>
-            <Form.Group className="mb-3" controlId="text">
-          <Form.Label>G71</Form.Label>
-          <Form.Control type="text" disabled />
-        </Form.Group>
-            <Form.Group className="mb-3" controlId="text">
-          <Form.Label>Glass</Form.Label>
-          <Form.Control type="text" disabled />
-        </Form.Group>
-            <Form.Group className="mb-3" controlId="text">
-    <Form.Select aria-label="Estado">
-      <option>Estado</option>
-      <option value="1">Recepcionado</option>
-      <option value="2">En Revision</option>
-      <option value="3">Entregado</option>
-    </Form.Select>
-        </Form.Group>
-            </Row>
-        </Container>
-    );
+  return (
+    <Container>
+     <Row className="d-flex justify-content-between aling-items-center gap-3">
+        <FormGroup className="col-2 mb-3" controlId="Id">
+          <FormLabel>ID</FormLabel>
+          <FormControl type="text" placeholder="ID" disabled />
+        </FormGroup>
+
+        <FormGroup className="col-3 mb-3" controlId="Modelo">
+          <FormLabel>Modelo</FormLabel>
+          <FormControl type="text" placeholder="Modelo" disabled />
+        </FormGroup>
+        <FormGroup className="col-3 mb-3" controlId="Falla">
+          <FormLabel>Falla</FormLabel>
+          <FormControl type="text" placeholder="Falla" disabled />
+        </FormGroup>
+        <FormGroup className="col-3 mb-3" controlId="Falla">
+          <FormLabel>Estado del Equipo</FormLabel>
+          <FormControl type="text" placeholder="Estado" disabled />
+        </FormGroup>
+      </Row>
+      <Row className="d-flex justify-content-between aling-items-center gap-3">
+        <FormGroup className="col-2 mb-3" controlId="Id">
+          <FormLabel>ID</FormLabel>
+          <FormControl type="text" placeholder="#A1" disabled />
+        </FormGroup>
+
+        <FormGroup className="col-3 mb-3" controlId="Modelo">
+          <FormLabel>Modelo</FormLabel>
+          <FormControl type="text" placeholder="G71 5G" disabled />
+        </FormGroup>
+        <FormGroup className="col-3 mb-3" controlId="Falla">
+          <FormLabel>Falla</FormLabel>
+          <FormControl type="text" placeholder="Glass" disabled />
+        </FormGroup>
+        <FormGroup className="col-3 mb-3" controlId="Estado">
+          <FormLabel>Estado</FormLabel>
+          <FormControl type="text" placeholder="En Revision" disabled />
+        </FormGroup>
+      </Row>
+    </Container>
+  );
 };
 
 export default StockEquipos;

@@ -16,7 +16,7 @@ const Navb = () => {
                   <Dropdown.Item as={Link} to="/cargaequipo">Recepcionar Equipo</Dropdown.Item>
                   <Dropdown.Item href="#action/3.1">Entregar Equipo</Dropdown.Item>
                   <Dropdown.Item as={Link} to="/cobro">Cobrar</Dropdown.Item>
-                  <Dropdown.Item href="#action/3.4">Equipos</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/equipos">Equipos</Dropdown.Item>
                 </DropdownButton>
               </Col>
               <Col lg={2} sm={12} className="mt-2">

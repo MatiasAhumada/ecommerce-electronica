@@ -28,7 +28,7 @@ function App() {
         <Route path="/cargaequipo" element={<CargarEquipo></CargarEquipo>}></Route>
         <Route path="/cobro" element={<CargaCobro></CargaCobro>}></Route>
         <Route path="/mostrarCobro" element={<MuestraCobro></MuestraCobro>}></Route>
-        <Route path="/sEquipos" element={<StockEquipos></StockEquipos>}></Route>
+        <Route path="/equipos" element={<StockEquipos></StockEquipos>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
